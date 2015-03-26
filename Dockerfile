@@ -9,7 +9,7 @@ ENV DB_HOST         localhost
 ENV DB_PORT         27017
 ENV DB_USER         admin
 ENV DB_PASSWORD     admin
-ENV DB_AUTH         true
+ENV DB_AUTH         True
 # ENV DB_REPLICA_NAME 
 
 # Create directories
