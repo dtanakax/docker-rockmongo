@@ -45,8 +45,8 @@ git pull後に
 
 ### 環境変数
 
-- <code>DB_HOST</code>MondoDBホスト名orIP 
-レプリカセットの場合プライマリを指定
+- <code>DB_HOST</code>MondoDBホスト名orIP レプリカセット構成の場合プライマリを指定
+シャードクラスタ構成の場合はルーターを指定
 - <code>DB_USER</code>管理者名
 - <code>DB_PASSWORD</code>管理者パスワード
 - <code>DB_AUTH</code>MongoDB認証有効の場合はtrue
