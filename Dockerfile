@@ -4,6 +4,14 @@ FROM tanaka0323/storage
 # File Author / Maintainer
 MAINTAINER Daisuke Tanaka, tanaka@infocorpus.com
 
+# Environment variables
+ENV DB_HOST         localhost
+ENV DB_PORT         27017
+ENV DB_USER         admin
+ENV DB_PASSWORD     admin
+ENV DB_AUTH         true
+# ENV DB_REPLICA_NAME 
+
 # Create directories
 RUN mkdir -p /var/www/
 RUN chmod -R 755 /var/www/

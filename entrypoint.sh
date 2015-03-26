@@ -1,14 +1,7 @@
 #!/bin/sh
 set -e
 
-DB_HOST=${DB_HOST:-""}
-DB_PORT=${DB_PORT:-27017}
-DB_USER=${DB_USER:-"admin"}
-DB_PASSWORD=${DB_PASSWORD:-"admin"}
-DB_AUTH=${DB_AUTH:-true}
-DB_REPLICA_NAME=${DB_REPLICA_NAME:-""}
-
-if [ "REPLICA_NAME" = "" ]; then
+if [ "DB_REPLICA_NAME" = "" ]; then
     DB_PORT = false
 fi
 
