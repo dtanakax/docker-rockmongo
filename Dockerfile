@@ -34,4 +34,5 @@ RUN chmod -R 755 /var/www/html
 # Define mountable directories.
 VOLUME ["/var/www/html"]
 
-ENTRYPOINT ["/entrypoint.sh"]
+# Executing sh
+ENTRYPOINT ./entrypoint.sh
