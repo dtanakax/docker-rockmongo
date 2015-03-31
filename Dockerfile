@@ -30,12 +30,12 @@ COPY config.php /var/www/html/config.php
 RUN chown -R www-data:www-data /var/www/html
 RUN chmod -R 755 /var/www/html
 
-ADD entrypoint.sh /var/www/html/entrypoint.sh
-RUN chown root:root /var/www/html/entrypoint.sh
-RUN chmod +x /var/www/html/entrypoint.sh
+ADD entrypoint.sh /entrypoint.sh
+RUN chown root:root /entrypoint.sh
+RUN chmod +x /entrypoint.sh
 
 # Define mountable directories.
 VOLUME ["/var/www/html"]
 
 # Executing sh
-ENTRYPOINT ./var/www/html/entrypoint.sh
+ENTRYPOINT ./entrypoint.sh
