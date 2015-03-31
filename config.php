@@ -18,7 +18,7 @@ $i = 0;
 * 
 * @see more details at http://rockmongo.com/wiki/configuration?lang=en_us
 */
-$MONGO["servers"][$i]["mongo_name"] = "DB_HOST";//mongo server name
+$MONGO["servers"][$i]["mongo_name"] = "DB_NAME";//mongo server name
 //$MONGO["servers"][$i]["mongo_sock"] = "/var/run/mongo.sock";//mongo socket path (instead of host and port)
 $MONGO["servers"][$i]["mongo_host"] = "DB_HOST";//mongo host
 $MONGO["servers"][$i]["mongo_port"] = DB_PORT;//mongo port
