@@ -4,15 +4,15 @@
 
 ### Base Docker Image
 
-[tanaka0323/storage](https://bitbucket.org/tanaka0323/docker-storage "tanaka0323/storage")
+[tanaka0323/storage](https://bitbucket.org/tanaka0323/docker-storage)
 
 ### 説明
 
 RockMongo Dockerコンテナイメージです。
 
-[RockMongoとは？](https://github.com/gilacode/rockmongo/ "RockMongoとは？")  
-[Dockerとは？](https://docs.docker.com/ "Dockerとは？")  
-[Docker Command Reference](https://docs.docker.com/reference/commandline/cli/ "Docker Command Reference")
+[RockMongoとは？](https://github.com/gilacode/rockmongo/)  
+[Dockerとは？](https://docs.docker.com/)  
+[Docker Command Reference](https://docs.docker.com/reference/commandline/cli/)
 
 ### 使用方法
 
@@ -22,7 +22,7 @@ git pull後に
 
 イメージ作成
 
-    $ docker build -t <tag>/rockmongo .
+    $ docker build -t tanaka0323/rockmongo .
 
 起動
 
@@ -31,7 +31,7 @@ git pull後に
                  -e DB_USER="admin" \
                  -e DB_PASSWORD="password" \
                  -e DB_AUTH=true \
-                 -ti <tag>/rockmongo
+                 -ti tanaka0323/rockmongo
 
 コンテナ内へログイン
 
@@ -54,9 +54,9 @@ git pull後に
 
 ### Figでの使用方法
 
-[Figとは](http://www.fig.sh/ "Figとは")  
+[Figとは](http://www.fig.sh/)  
 
-[設定ファイル記述例](https://bitbucket.org/tanaka0323/fig-examples "設定ファイル記述例")
+[設定ファイル記述例](https://bitbucket.org/tanaka0323/fig-examples)
 
 ### License
 
