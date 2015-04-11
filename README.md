@@ -1,12 +1,15 @@
 ![rockmongo latest](https://img.shields.io/badge/wordpress-latest-brightgreen.svg) ![License MIT](https://img.shields.io/badge/license-MIT-blue.svg)
 
-# docker-rockmongo
+docker-rockmongo
+=====================
 
-### Base Docker Image
+Base Docker Image
+---------------------
 
 [tanaka0323/storage](https://bitbucket.org/tanaka0323/docker-storage)
 
-### 説明
+説明
+---------------------
 
 RockMongo Dockerコンテナイメージです。
 
@@ -14,7 +17,8 @@ RockMongo Dockerコンテナイメージです。
 [Dockerとは？](https://docs.docker.com/)  
 [Docker Command Reference](https://docs.docker.com/reference/commandline/cli/)
 
-### 使用方法
+使用方法
+---------------------
 
 git pull後に
 
@@ -37,28 +41,32 @@ git pull後に
 
     $ docker exec -ti <name> bash
 
-### 利用可能なボリューム
+利用可能なボリューム
+---------------------
 
 以下のボリュームが利用可能
 
     /var/www/html       # RockMongoドキュメントルート
 
-### 環境変数
+環境変数
+---------------------
 
-- <code>DB_HOST</code>MondoDBホスト名orIP レプリカセット構成の場合プライマリを指定
+- `DB_HOST` MondoDBホスト名orIP レプリカセット構成の場合プライマリを指定
 シャードクラスタ構成の場合はルーターを指定
-- <code>DB_USER</code>管理者名
-- <code>DB_PASSWORD</code>管理者パスワード
-- <code>DB_AUTH</code>MongoDB認証有効の場合はtrue
-- <code>REPLICA_NAME</code>レプリカセット名 DB_HOSTがレプリカセットの場合のみ有効
+- `DB_USER` 管理者名
+- `DB_PASSWORD` 管理者パスワード
+- `DB_AUTH` MongoDB認証有効の場合はtrue
+- `REPLICA_NAME` レプリカセット名 DB_HOSTがレプリカセットの場合のみ有効
 
-### Docker Composeでの使用方法
+Docker Composeでの使用方法
+---------------------
 
 [Docker Composeとは](https://docs.docker.com/compose/)  
 
 [設定ファイル記述例](https://bitbucket.org/tanaka0323/compose-examples)
 
-### License
+License
+---------------------
 
 The MIT License
 Copyright (c) 2015 Daisuke Tanaka
