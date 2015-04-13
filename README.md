@@ -1,4 +1,4 @@
-![rockmongo latest](https://img.shields.io/badge/wordpress-latest-brightgreen.svg) ![License MIT](https://img.shields.io/badge/license-MIT-blue.svg)
+![rockmongo 1.1.8](https://img.shields.io/badge/rockmongo-1.1.8-brightgreen.svg) ![License MIT](https://img.shields.io/badge/license-MIT-blue.svg)
 
 docker-rockmongo
 =====================
