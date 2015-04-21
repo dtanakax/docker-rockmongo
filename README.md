@@ -11,7 +11,7 @@ Base Docker Image
 説明
 ---------------------
 
-RockMongo Dockerコンテナイメージです。
+RockMongo Dockerコンテナ作成設定
 
 [RockMongoとは？](https://github.com/gilacode/rockmongo/)  
 [Dockerとは？](https://docs.docker.com/)  
