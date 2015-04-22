@@ -6,15 +6,6 @@ MAINTAINER Daisuke Tanaka, tanaka@infocorpus.com
 
 RUN opkg-install bash
 
-# Environment variables
-ENV DB_NAME         mongodb
-ENV DB_HOST         localhost
-ENV DB_PORT         27017
-ENV DB_USER         admin
-ENV DB_PASSWORD     admin
-ENV DB_AUTH         True
-ENV DB_REPLICA_NAME *None*
-
 # Create directories
 RUN mkdir -p /var/www/
 RUN chmod -R 755 /var/www/
@@ -32,6 +23,15 @@ COPY entrypoint.sh /entrypoint.sh
 RUN chown -R www-data:www-data /var/www/html && \
     chmod -R 755 /var/www/html && \
     chmod +x /entrypoint.sh
+
+# Environment variables
+ENV DB_NAME         mongodb
+ENV DB_HOST         localhost
+ENV DB_PORT         27017
+ENV DB_USER         admin
+ENV DB_PASSWORD     admin
+ENV DB_AUTH         False
+ENV DB_REPLICA_NAME *None*
 
 ENTRYPOINT ["./entrypoint.sh"]
 

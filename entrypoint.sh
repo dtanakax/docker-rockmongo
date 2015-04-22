@@ -2,8 +2,12 @@
 set -e
 
 if [ "$1" = "/bin/sh" ]; then
+    _DB_REPLICA_NAME=" \"\""
     if [ "$DB_REPLICA_NAME" != "*None*" ]; then
         DB_PORT="false"
+        _DB_REPLICA_NAME="array('replicaSet' => '$DB_REPLICA_NAME')"
+    else
+        DB_REPLICA_NAME=""
     fi
 
     if [ "$DB_AUTH" = "True" ]; then
@@ -22,7 +26,8 @@ if [ "$1" = "/bin/sh" ]; then
                 s/DB_USER/$DB_USER/
                 s/DB_PASSWORD/$DB_PASSWORD/
                 s/DB_AUTH/$DB_AUTH/
-                s/DB_REPLICA_NAME/$DB_REPLICA_NAME/g" /var/www/html/config.php
+                s|DB_REPLICA_NAME|$_DB_REPLICA_NAME|g" /var/www/html/config.php
+
         touch $RM_FIRST
     fi
 fi

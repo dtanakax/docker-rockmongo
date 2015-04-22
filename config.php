@@ -22,7 +22,7 @@ $MONGO["servers"][$i]["mongo_name"] = "DB_NAME";//mongo server name
 //$MONGO["servers"][$i]["mongo_sock"] = "/var/run/mongo.sock";//mongo socket path (instead of host and port)
 $MONGO["servers"][$i]["mongo_host"] = "DB_HOST";//mongo host
 $MONGO["servers"][$i]["mongo_port"] = DB_PORT;//mongo port
-$MONGO["servers"][$i]["mongo_options"] = array('replicaSet' => 'DB_REPLICA_NAME');
+$MONGO["servers"][$i]["mongo_options"] = DB_REPLICA_NAME;
 $MONGO["servers"][$i]["mongo_timeout"] = 0;//mongo connection timeout
 //$MONGO["servers"][$i]["mongo_db"] = "MONGO_DATABASE";//default mongo db to connect, works only if mongo_auth=false
 $MONGO["servers"][$i]["mongo_user"] = "DB_USER";//mongo authentication user name, works only if mongo_auth=false
