@@ -15,7 +15,7 @@ RUN chmod -R 755 /var/www/
 # Setup Rockmongo
 ADD https://github.com/iwind/rockmongo/archive/$RM_VERSION.zip /rockmongo-master.zip
 RUN unzip /rockmongo-master.zip && \
-    mv /rockmongo-master /html && \
+    mv /rockmongo-$RM_VERSION /html && \
     mv /html /var/www/ && \
     rm -f /rockmongo-master.zip && \
     rm -f /var/www/html/config.php
