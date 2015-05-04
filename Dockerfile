@@ -4,6 +4,8 @@ FROM dtanakax/storage
 # File Author / Maintainer
 MAINTAINER Daisuke Tanaka, dtanakax@gmail.com
 
+ENV RM_VERSION 1.1.7
+
 RUN opkg-install bash
 
 # Create directories
@@ -11,7 +13,7 @@ RUN mkdir -p /var/www/
 RUN chmod -R 755 /var/www/
 
 # Setup Rockmongo
-ADD https://github.com/gilacode/rockmongo/archive/master.zip /rockmongo-master.zip
+ADD https://github.com/iwind/rockmongo/archive/$RM_VERSION.zip /rockmongo-master.zip
 RUN unzip /rockmongo-master.zip && \
     mv /rockmongo-master /html && \
     mv /html /var/www/ && \
