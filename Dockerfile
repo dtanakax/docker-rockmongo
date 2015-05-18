@@ -32,7 +32,7 @@ ENV DB_HOST         localhost
 ENV DB_PORT         27017
 ENV DB_USER         admin
 ENV DB_PASSWORD     admin
-ENV DB_AUTH         False
+ENV DB_AUTH         false
 ENV DB_REPLICA_NAME *None*
 
 ENTRYPOINT ["./entrypoint.sh"]

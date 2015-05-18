@@ -10,12 +10,6 @@ if [ "$1" = "/bin/sh" ]; then
         DB_REPLICA_NAME=""
     fi
 
-    if [ "$DB_AUTH" = "True" ]; then
-        DB_AUTH="true"
-    else
-        DB_AUTH="false"
-    fi
-
     RM_FIRST=/firstrun
 
     # Configure RockMongo
